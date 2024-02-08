@@ -5,7 +5,7 @@
 </details>
 
 <details>
-<summary>RF2 Información clientes y pedidos:</summary>
+<summary>RF2 Información clientes y pedidos</summary>
 
 - El sistema debe tener una base de datos para almacenar los datos de los clientes y otra para los datos de los pedidos.
 </details>
