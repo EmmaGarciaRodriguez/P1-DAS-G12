@@ -39,7 +39,7 @@
 - Este componente complejo cuenta con una gran funcionalidad que es necesario desacoplar y gestiona el reparto de las flotas de transporte a los clientes y las rutas de los camiones. La gestión cuenta con 2 algoritmos de optimización que se seleccionan en función de la demora del camión.
 
 <details>
-<summary><5>RF3.3.1 Incidencias</5></summary>
+<summary>RF3.3.1 Incidencias</summary>
 
 - Se deben reportar las incidencias durante el reparto. Las incidencias pueden ser de tres tipos: camión averiado, demora, no entrega de pedido.
 </details>
