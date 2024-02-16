@@ -25,9 +25,13 @@ La lógica de negocio debe contar con los módulos clientes, pedidos, repartos y
 
 ## Decision Outcome
 
-Chosen option: "Crear módulos principales", because permite cumplir con la arquitectura microservicios y los módulos pedidos.
+Chosen option: 
+"Crear módulos principales",
+" Consultar datos cliente",
+"Realizar pedido"
 
-## Pros and Cons of the Options
+because permite cumplir con la arquitectura microservicios y los módulos pedidos.
+
 
 ### Crear módulos principales
 
