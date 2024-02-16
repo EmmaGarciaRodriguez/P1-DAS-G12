@@ -6,8 +6,8 @@
 ## Context and Problem Statement
 
 La lógica de negocio debe contar con los módulos clientes, pedidos, repartos y rutas, y estadísticas.
-- El módulo clientes permite a acceder los datos de personales de los clientes (identificador, nombre, apellidos, email y teléfono móvil).
-- El módulo pedidos permite a los clientes realizar pedidos de productos.
+- El módulo Clientes permite a acceder los datos de personales de los clientes (identificador, nombre, apellidos, email y teléfono móvil).
+- El módulo Pedidos permite a los clientes realizar pedidos de productos.
 - El módulo Reparto y rutas gestiona el reparto de los pedidos a los clientes y las rutas de los camiones. El sistema debe contar con un componente Incidencias que se encarga de reportar las incidencias durante el reparto (camión averiado, demora o no entrega de pedido).
 - El módulo Estadísticas proporciona información sobre los clientes, sobre el estado de los pedidos y la situación en tiempo real de los camiones.
 
