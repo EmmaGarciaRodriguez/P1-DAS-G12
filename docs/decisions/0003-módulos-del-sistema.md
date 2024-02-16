@@ -25,7 +25,7 @@ La lógica de negocio debe contar con los módulos clientes, pedidos, repartos y
 
 ## Decision Outcome
 
-Chosen option: 
+Chosen options: 
 "Crear módulos principales",
 " Consultar datos cliente",
 "Realizar pedido"
