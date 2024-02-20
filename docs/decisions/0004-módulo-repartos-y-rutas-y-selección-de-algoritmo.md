@@ -18,7 +18,8 @@ El módulo Repartos y rutas debe gestionar el reparto y las rutas de los paquete
 
 ## Decision Outcome
 
-Chosen option: "Utilizar patrón Strategy", because mejora la calidad del diseño y facilita la elección del algoritmo.
+Chosen options: "Utilizar patrón Strategy", because mejora la calidad del diseño y facilita la elección del algoritmo.
+                "Gestión del reparto", because cumple con los requisitos al problema pedido y permite realizar una buena gestión de las rutas durante los repartos.
 
 ## Pros and Cons of the Options
 
