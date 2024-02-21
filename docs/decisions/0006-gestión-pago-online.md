@@ -5,7 +5,7 @@
 
 ## Context and Problem Statement
 
-El sistema debe permitir realizar pagos online, por lo que necesitaremos un módulo que se encargue de esto. Además, el pago debe ser un proceso seguro y fiable.
+El sistema debe permitir realizar pagos online a los clientes.
 
 ## Decision Drivers
 
@@ -13,9 +13,19 @@ El sistema debe permitir realizar pagos online, por lo que necesitaremos un mód
 
 ## Considered Options
 
-* Crear un módulo que permita realizar los pagos
-* Implementar una API que haga de pasarela para realizar los pagos
+* Implementación de una pasarela de pago propia
+* Importar una API externa que realice los pagos a través de una pasarela de pago
 
 ## Decision Outcome
 
-Chosen option: "Implementar una API que haga de pasarela para realizar los pagos", because Garantiza la seguridad en el proceso de pago y más fiabilidad que si lo implementaramos de cero, siendo ésta una solución existente y funcional.
+Chosen option: "Importar una API externa que realice los pagos a través de una pasarela de pago", because garantiza la seguridad en el proceso de pago y más fiabilidad que si lo implementaramos de cero, siendo ésta una solución existente y funcional.
+
+## Pros and Cons of the Options
+
+### Importar una API externa que realice los pagos a través de una pasarela de pago
+
+Utilizar una API externa que permita realizar pagos online.
+
+* Good, because es una API ya existente y fiable.
+* Good, because no hay que implementarla desde cero.
+* Bad, because habría que adquirir los permisos necesarios.
