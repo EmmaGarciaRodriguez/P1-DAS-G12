@@ -14,12 +14,22 @@ El módulo estadísticas proporciona información sobre el estado de los pedidos
 ## Considered Options
 
 * Módulo Estadísticas
+* Patrón Strategy
 
 ## Decision Outcome
 
-Chosen option: "Módulo Estadísticas", because cumple con los requisitos pedidos del sistema
+Chosen options: 
+"Módulo Estadísticas", because cumple con los requisitos pedidos del sistema
+"Patrón Strategy", because mejora la calidad del diseño y facilita la elección del tipo de estadística deseada.
 
 ## Pros and Cons of the Options
+### Patrón Strategy
+Emplear el patrón Strategy para seleccionar el tipo de estadística que se desea consultar.
+
+* Good, because Cumple el Principio de abierto/cerrado.
+* Good, because Permite aislar los detalles de implementación.
+* Bad, because Aumenta la complejidad del sistema.
+
 
 ### Módulo Estadísticas
 
