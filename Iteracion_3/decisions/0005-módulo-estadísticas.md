@@ -13,24 +13,22 @@ El módulo estadísticas proporciona información sobre el estado de los pedidos
 
 ## Considered Options
 
-* Módulo Estadísticas
-* Patrón Strategy
+* Una clase Estadística que guarde los 3 tipos de estadísticas
+* Una clase Estadística y una clase por cada tipo de estadística y uso del patrón Strategy
 
 ## Decision Outcome
 
-Chosen options: 
-"Módulo Estadísticas", because cumple con los requisitos pedidos del sistema
-"Patrón Strategy", because mejora la calidad del diseño y facilita la elección del tipo de estadística deseada.
+Chosen option: 
+"Una clase Estadística y una clase por cada tipo de estadística y uso del patrón Strategy", because cumple con los requisitos pedidos del sistema de tener distintos tipos de estadísticas, mejora la escalabilidad y promueve la encapsulación. El uso del patrón Strategy mejora la calidad del diseño y facilita la elección del tipo de estadística deseada.
 
 ## Pros and Cons of the Options
-### Patrón Strategy
-Emplear el patrón Strategy para seleccionar el tipo de estadística que se desea consultar.
+### Una clase Estadística que guarde los 3 tipos de estadísticas
+Una única clase Estadística desde la que se pueda consultar los distintos tipo de estadísticas posibles (info clientes, estado pedidos, tiempo real camiones).
 
 * Good, because Cumple el Principio de abierto/cerrado.
 * Good, because Permite aislar los detalles de implementación.
 * Bad, because Aumenta la complejidad del sistema.
 
 
-### Módulo Estadísticas
+### Una clase Estadística y una clase por cada tipo de estadística y uso del patrón Strategy
 
-A través del módulo estadísticas se permite acceder al estado de los pedidos, la ubicación de los camiones en tiempo real y la información de los clientes.
