@@ -6,7 +6,3 @@
 ## Context and Problem Statement
 
 El módulo Clientes se encuentra en la capa de presentación cuando debe encontrarse en la capa de lógica de negocio junto con los demás módulos.
-
-## Decision Outcome
-
-Chosen option: "", because comes out best.
