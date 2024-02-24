@@ -14,12 +14,12 @@ El módulo estadísticas proporciona información sobre el estado de los pedidos
 ## Considered Options
 
 * Una clase Estadística que guarde los 3 tipos de estadísticas
-* Una clase Estadística y una clase por cada tipo de estadística y uso del patrón Strategy
+* Una clase Estadística, una clase por cada tipo de estadística y uso del patrón Strategy
 
 ## Decision Outcome
 
 Chosen option: 
-"Una clase Estadística y una clase por cada tipo de estadística y uso del patrón Strategy", because cumple con los requisitos pedidos del sistema de tener distintos tipos de estadísticas, mejora la escalabilidad y promueve la encapsulación. El uso del patrón Strategy mejora la calidad del diseño y facilita la elección del tipo de estadística deseada.
+"Una clase Estadística, una clase por cada tipo de estadística y uso del patrón Strategy", because cumple con los requisitos pedidos del sistema de tener distintos tipos de estadísticas, mejora la escalabilidad y promueve la encapsulación. El uso del patrón Strategy mejora la calidad del diseño y facilita la elección del tipo de estadística deseada.
 
 ## Pros and Cons of the Options
 ### Una clase Estadística que guarde los 3 tipos de estadísticas
@@ -32,3 +32,7 @@ Una única clase Estadística desde la que se pueda consultar los distintos tipo
 
 ### Una clase Estadística y una clase por cada tipo de estadística y uso del patrón Strategy
 
+* Good, because el patrón Strategy permite aislar los detalles de implementación.
+* Good, because el módulo Gestión Repartos y Rutas de la lógica de negocio englobará todas las funciones relacionadas con los repartos y las rutas, aumentando la modularidad y escalabilidad.
+* Good, because el patrón Strategy cumple el Principio de abierto/cerrado.
+* Bad, because el uso del patrón puede aumentar la complejidad del sistema.
