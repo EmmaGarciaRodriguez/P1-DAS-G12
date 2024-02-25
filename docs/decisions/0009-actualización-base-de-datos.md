@@ -3,10 +3,6 @@
 * Status: proposed
 * Date: 2024-02-25
 
-## Decision Drivers
-
-* 001-Uso del driver JDBC MYSQL 8.0
-* 002-Microsoft ODBC Driver for SQL Server
 
 ## Considered Options
 
