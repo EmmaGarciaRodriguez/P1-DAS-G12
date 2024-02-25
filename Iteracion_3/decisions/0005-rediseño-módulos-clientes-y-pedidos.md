@@ -19,24 +19,23 @@ La lógica de negocio debe contar con los módulos clientes, pedidos, repartos y
 
 ## Considered Options
 
-* Crear módulos principales
-* Consultar datos del cliente
-* Realizar pedido
+* Crear los módulos Cliente, Estadísticas, Repartos y Rutas
+* Crear los módulos Cliente, Pedidos, Estadísticas, Repartos y Rutas
 
 ## Decision Outcome
 
-Chosen option: "Crear módulos principales", because permite cumplir con la arquitectura microservicios y los módulos pedidos.
+Chosen option: "Crear los módulos Cliente, Estadísticas, Repartos y Rutas", because permite cumplir con la arquitectura microservicios y omite módulos innecesarios.
 
-## Pros and Cons of the Options
 
-### Crear módulos principales
+### Crear los módulos Cliente, Estadísticas, Repartos y Rutas
 
 Se crean los módulos Clientes, Pedidos, Repartos y rutas, y Estadísticas que requiere el sistema para realizar las funciones principales. Dichos módulos se encuentran en la capa de lógica de negocio.
+El módulo Cliente permite a los clientes consultar sus datos personales: identificador, nombre, apellidos, email o teléfono móvil. Además, desde el módulo Cliente, el cliente puede realizar una compra.
 
-### Consultar datos del cliente
 
+### Crear los módulos Cliente, Pedidos, Estadísticas, Repartos y Rutas
+
+Se crean los módulos Clientes, Pedidos, Repartos y rutas, y Estadísticas que requiere el sistema para realizar las funciones principales. Dichos módulos se encuentran en la capa de lógica de negocio.
 El módulo Cliente permite a los clientes consultar sus datos personales: identificador, nombre, apellidos, email o teléfono móvil.
+Por último, desde el módulo Pedidos el cliente podrá realizar una compra.
 
-### Realizar pedido
-
-Desde el módulo Cliente, el cliente puede realizar una compra.
