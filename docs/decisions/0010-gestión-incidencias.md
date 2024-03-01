@@ -34,5 +34,5 @@ El sistema cuenta con un nuevo módulo de Incidencias que se relaciona con el m�
 
 El módulo reparto y rutas cuenta con una clase Gestor Repartos y rutas que se ocupará de reportar los tres tipos de incidencias que pueden darse
 
-* Good, because simplifica la lógica de las incidencias y no añade complejidad innecesaria
-* Bad, because Complicar introducir más tipos de incidencias
+* Good, because simplifica la lógica de las incidencias y no añade complejidad innecesaria al sistema.
+* Bad, because Complica introducir más tipos de incidencias.
