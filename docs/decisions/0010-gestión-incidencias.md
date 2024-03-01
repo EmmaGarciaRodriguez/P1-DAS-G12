@@ -5,7 +5,7 @@
 
 ## Context and Problem Statement
 
-La clase Incidencias reporta las incidencias que tienen lugar durante el reparto de los pedidos. Estas incidencias puedes ser de 3 tipos: camión averiado, demora, pedido no entregado.
+Se deben reportar las incidencias que tienen lugar durante el reparto de los pedidos. Estas incidencias puedes ser de 3 tipos: camión averiado, demora, pedido no entregado.
 
 ## Decision Drivers
 
@@ -14,11 +14,11 @@ La clase Incidencias reporta las incidencias que tienen lugar durante el reparto
 ## Considered Options
 
 * Un módulo Incidencias y uso del patrón Publish Subscribe
-* Una clase Incidencias en el módulo de Repartos y Rutas
+* La clase Gestor Repartos y Rutas se ocupa de reportar las incidencias
 
 ## Decision Outcome
 
-Chosen option: "Un módulo Incidencias y uso del patrón Publish Subscribe", because favorece el desacoplamiento de los módulos y permite conocer las incidencias que tienen lugar de una forma más eficiente.
+Chosen option: "La clase Gestor Repartos y Rutas se ocupa de reportar las incidencias", no complica la lógica de negocio innecesariamente y es suficiente para solucionar dicho problema de diseño.
 
 ## Pros and Cons of the Options
 
@@ -28,13 +28,11 @@ El sistema cuenta con un nuevo módulo de Incidencias que se relaciona con el m�
 
 * Good, because Mejora la escalabilidad del sistema
 * Good, because Permite que el sistema sea ampliado sin tener que modificar la arquitectura
-* Good, because Diseño más claro y sencillo
+* Bad, because Diseño más engorroso y aumenta la complejidad del sistema innecesariamente
 
-### Una clase Incidencias en el módulo de Repartos y Rutas
+### La clase Gestor Repartos y Rutas se ocupa de reportar las incidencias
 
-El sistema cuenta con una clase Incidencias dentro del módulo de Repartos y Rutas que recibe la información de los estados de los pedidos y la notifica a las partes interesadas.
+El módulo reparto y rutas cuenta con una clase Gestor Repartos y rutas que se ocupará de reportar los tres tipos de incidencias que pueden darse
 
-* Good, because Relación directa con el gestor de Repartos y Rutas
-* Bad, because No favorece el desacoplamiento de los módulos
-* Bad, because No permite expandir el sistema
+* Good, because simplifica la lógica de las incidencias y no añade complejidad innecesaria
 * Bad, because Complicar introducir más tipos de incidencias
